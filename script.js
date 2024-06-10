@@ -74,4 +74,7 @@ for (let i of products.data){
     let image = document.createElement("img");
     image.setAttribute("src", i.image);
     imgContainer.appendChild(image);
+    card.appendChild(imgContainer);
+
+    document.getElementById("products").appendChild(card);
 }
