@@ -76,6 +76,9 @@ img{
     font-weight: 500;
 
 }
+.hide{
+    display: none;
+}
 @media screen and (max-width: 720px){
     img {
         max-width: 100%; 

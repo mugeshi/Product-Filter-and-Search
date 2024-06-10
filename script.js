@@ -65,8 +65,8 @@ let products = {
 for (let i of products.data){
     // Create Card
     let card = document.createElement("div");
-    // Card should have category
-    card.classList.add("card", i.category); 
+    // Card should have category and should stay hidden
+    card.classList.add("card", i.category , "hide"); 
     // Image div
     let imgContainer = document.createElement("div");
     imgContainer.classList.add("image-container"); 
