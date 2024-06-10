@@ -15,7 +15,7 @@ let products = {
 
     },
     {
-        productName:"sport",
+        productName:"sport watch",
         category: "watch",
         price: "99",
         image: "sporty-smartwatch.jpg",
@@ -76,5 +76,23 @@ for (let i of products.data){
     imgContainer.appendChild(image);
     card.appendChild(imgContainer);
 
+    
+
+    //container
+    let container = document.createElement("div");
+    container.classList.add("container");
+
+    //product name
+    let name = document.createElement("h5");
+    name.classList.add("product-name");
+    name.innerText=i.productName.toUpperCase();
+    container.appendChild(name);
+    
+    //product price
+    let price = document.createElement("h6");
+    price.innerText="$" + i.price;
+    container.appendChild( price);
+    
+    card.appendChild(container)
     document.getElementById("products").appendChild(card);
 }

@@ -48,4 +48,49 @@ body{
     background-color: #6759ff;
     color:#ffffff;
 }
+#products{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1.5em;
+    padding: 2em 0;
 
+}
+.card{
+    background-color: #ffffff;
+    max-width: 18em;
+    margin-top: 1em;
+    padding: 1em 5em;
+    border-radius: 5px;
+    box-shadow: 1em 2em 2.5em rgba(1,2,68,0.8);
+}
+.image-container{
+text-align: center;
+height: 270px;
+}
+img{
+    max-width: 100%;
+    height:15em;
+}
+
+.container h5{
+    font-weight: 500;
+
+}
+@media screen and (max-width: 720px){
+    img {
+        max-width: 100%; 
+        height: auto;
+    }
+    .card {
+        max-width: 78%; 
+        padding: 1em; 
+        margin-top: 1em;
+    }
+    #products {
+        grid-template-columns: repeat(2, auto); 
+        grid-column-gap: 1em;
+    }
+    .image-container {
+        height: auto; 
+    }
+}
